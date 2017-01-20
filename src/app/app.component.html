@@ -1,3 +1,36 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button aria-expanded="false" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2" type="button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a [routerLink]="['/Home']" routerLinkActive="active" [routerLink]="['/Home']" routerLinkActive="active" class="navbar-brand"
+        href="#">KMCD</a>
+    </div>
+    <div style="height: 1px;" aria-expanded="false" class="navbar-collapse collapse" id="navbar-collapse-2">
+      <ul class="nav navbar-nav">
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['/About']">Про нас</a></li>
+            <li><a [routerLink]="['/About']">Друзі</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+    <i class="fa fa-facebook" style="font-size:36px"></i>
+      <i class="glyphicon glyphicon-search"></i>
+      </ul>
+
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+<router-outlet></router-outlet>
